@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Detailing - Детейлинг премиум-класса в Краснодаре</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu-overlay" id="menuOverlay"></div>
+    <nav class="mobile-menu" id="mobileMenu">
+        <button class="close-menu" id="closeMenu">&times;</button>
+        <a href="#hero">Главная</a>
+        <a href="#why-us">Почему мы</a>
+        <a href="#services">Услуги</a>
+        <a href="#process">Этапы работы</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+
+    <!-- Кнопка бургер -->
+    <button class="burger-btn" id="burgerBtn">
+        <span></span><span></span><span></span>
+    </button>
+
+    <!-- Плавающая кнопка WhatsApp -->
+    <a href="https://wa.me/79000000000" class="floating-whatsapp" target="_blank" title="Написать в WhatsApp">
+        <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- Кнопка Наверх -->
+    <button class="scroll-top" id="scrollTop" title="Наверх">↑</button>
+
+    <header class="hero" id="hero">
+        <div class="container">
+            <div class="logo-container animate-on-scroll">
+                <div class="logo-neon">
+                    <span class="logo-main">SHADOW</span>
+                    <span class="logo-sub">D E T A I L I N G</span>
+                </div>
+            </div>
+
+            <h1 class="animate-on-scroll">ДЕТЕЙЛИНГ ПРЕМИУМ-КЛАССА<br><span>В КРАСНОДАРЕ</span></h1>
+
+            <form class="lead-form animate-on-scroll" id="contactForm">
+                <input type="text" id="carBrand" placeholder="Марка авто (н-р, Porsche)" required>
+                <select id="service" required>
+                    <option value="" disabled selected>Выбрать услугу</option>
+                    <option value="polishing">Полировка ЛКП</option>
+                    <option value="film">Оклейка пленкой</option>
+                    <option value="interior">Детейлинг салона</option>
+                </select>
+                <input type="tel" id="contact" placeholder="Телефон или Telegram" required>
+                <button type="submit">ОСТАВИТЬ ЗАЯВКУ</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Почему мы -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <h2 class="animate-on-scroll">ПОЧЕМУ ВЫБИРАЮТ НАС</h2>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">🏆</div>
+                    <h3>5+ лет опыта</h3>
+                    <p>Более 2000 выполненных работ с автомобилями премиум и люкс класса.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Гарантия качества</h3>
+                    <p>Даём письменную гарантию на все виды работ до 3 лет.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">💎</div>
+                    <h3>Премиум материалы</h3>
+                    <p>Работаем только с сертифицированными составами Koch Chemie, Gtechniq, SunTek.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Быстрые сроки</h3>
+                    <p>Полировка за 1 день, оклейка за 2 дня. Без потери качества.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="services container" id="services">
+            <h2 class="animate-on-scroll">НАШИ УСЛУГИ</h2>
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <h3>ПОЛИРОВКА ЛКП</h3>
+                    <svg class="service-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25,60 Q30,40 45,38 L65,36 Q75,35 80,42 Q83,48 80,52 L75,54 Q73,48 68,46 Q63,44 60,48 Q58,52 59,56 L45,56 Q44,50 40,47 Q35,44 30,47 Q27,50 26,56 Z" fill="#ccff00"/>
+                        <circle cx="38" cy="58" r="6" fill="#ccff00"/>
+                        <circle cx="68" cy="58" r="6" fill="#ccff00"/>
+                        <path d="M30,30 L33,25 L36,30 Z" fill="#ccff00"/>
+                        <path d="M50,25 L53,18 L56,25 Z" fill="#ccff00"/>
+                        <path d="M65,28 L68,23 L71,28 Z" fill="#ccff00"/>
+                    </svg>
+                    <p>Восстановление зеркального блеска, удаление 99% царапин и нанесение керамики премиум-класса.</p>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <h3>ОКЛЕЙКА ПЛЕНКОЙ</h3>
+                    <svg class="service-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20,45 L50,30 L80,45 L50,60 Z" fill="#ccff00"/>
+                        <path d="M20,55 L50,40 L80,55 L50,70 Z" fill="#8a9a2b"/>
+                        <path d="M20,65 L50,50 L80,65 L50,80 Z" fill="#5a6a1b"/>
+                    </svg>
+                    <p>Защита кузова матовым или глянцевым полиуретаном от сколов, царапин и химии на дорогах.</p>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <h3>ДЕТЕЙЛИНГ САЛОНА</h3>
+                    <svg class="service-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="35" fill="none" stroke="#ccff00" stroke-width="6"/>
+                        <circle cx="50" cy="50" r="8" fill="#ccff00"/>
+                        <path d="M50,50 L25,70" stroke="#ccff00" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M50,50 L75,70" stroke="#ccff00" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M50,50 L50,20" stroke="#ccff00" stroke-width="6" stroke-linecap="round"/>
+                    </svg>
+                    <p>Глубокая химчистка с разбором салона, очистка и защита кожи, велюра и алькантары.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Этапы работы -->
+        <section class="process" id="process">
+            <div class="container">
+                <h2 class="animate-on-scroll">КАК МЫ РАБОТАЕМ</h2>
+                <div class="process-steps">
+                    <div class="step animate-on-scroll">
+                        <div class="step-number">01</div>
+                        <h3>Заявка</h3>
+                        <p>Оставляете заявку на сайте или звоните нам. Обсуждаем детали.</p>
+                    </div>
+                    <div class="step animate-on-scroll">
+                        <div class="step-number">02</div>
+                        <h3>Диагностика</h3>
+                        <p>Бесплатно осматриваем автомобиль и составляем план работ.</p>
+                    </div>
+                    <div class="step animate-on-scroll">
+                        <div class="step-number">03</div>
+                        <h3>Работа</h3>
+                        <p>Выполняем работы в чистом боксе с профессиональным оборудованием.</p>
+                    </div>
+                    <div class="step animate-on-scroll">
+                        <div class="step-number">04</div>
+                        <h3>Выдача</h3>
+                        <p>Показываем результат, даём рекомендации по уходу и гарантию.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio container" id="portfolio">
+            <h2 class="animate-on-scroll">ПОРТФОЛИО</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item animate-on-scroll">
+                    <img src="images/porsche.jpg" alt="Porsche Cayenne">
+                    <p>Porsche Cayenne — Полировка и керамика</p>
+                </div>
+                <div class="portfolio-item animate-on-scroll">
+                    <img src="images/bmw.jpg" alt="BMW M5">
+                    <p>BMW M5 — Оклейка полиуретаном</p>
+                </div>
+                <div class="portfolio-item animate-on-scroll">
+                    <img src="images/mercedes.jpg" alt="Mercedes-Benz GLE">
+                    <p>Mercedes-Benz GLE — Детейлинг салона</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Отзывы -->
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <h2 class="animate-on-scroll">ОТЗЫВЫ КЛИЕНТОВ</h2>
+                <div class="reviews-grid">
+                    <div class="review-card animate-on-scroll">
+                        <div class="review-stars">★★★★★</div>
+                        <p>"Отполировали мой BMW X5 идеально. Зеркальный блеск, ни одной царапины. Ребята знают своё дело!"</p>
+                        <div class="review-author">— Алексей М., BMW X5</div>
+                    </div>
+                    <div class="review-card animate-on-scroll">
+                        <div class="review-stars">★★★★★</div>
+                        <p>"Оклеили весь кузов в матовую плёнку. Выглядит просто космос. Гарантия 3 года — это серьёзно."</p>
+                        <div class="review-author">— Дмитрий К., Mercedes AMG GT</div>
+                    </div>
+                    <div class="review-card animate-on-scroll">
+                        <div class="review-stars">★★★★★</div>
+                        <p>"Химчистка салона превзошла ожидания. Салон как новый, даже запах исчез полностью. Рекомендую!"</p>
+                        <div class="review-author">— Ирина С., Porsche Macan</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <h2 class="animate-on-scroll">КОНТАКТЫ</h2>
+                <div class="contacts-wrapper">
+                    <div class="contacts-info animate-on-scroll">
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>Адрес</strong>
+                                <p>г. Краснодар, ул. Примерная, д. 1</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <strong>Телефон</strong>
+                                <p><a href="tel:+79000000000">+7 (900) 000-00-00</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🕐</span>
+                            <div>
+                                <strong>Режим работы</strong>
+                                <p>Ежедневно с 10:00 до 21:00</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">💬</span>
+                            <div>
+                                <strong>Мессенджеры</strong>
+                                <p>Telegram / WhatsApp</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container animate-on-scroll">
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=38.9753,45.0355&z=15&pt=38.9753,45.0355,pm2rdm" width="100%" height="350" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <div class="footer-logo-neon">
+                    <span class="footer-logo-main">SHADOW</span>
+                    <span class="footer-logo-sub">D E T A I L I N G</span>
+                </div>
+                <p>&copy; 2026 Shadow Detailing Краснодар. Все права защищены.</p>
+            </div>
+            <div class="footer-info">
+                <p>г. Краснодар, ул. Примерная, д. 1</p>
+                <p>Ежедневно с 10:00 до 21:00</p>
+            </div>
+            <div class="footer-contact">
+                <a href="tel:+79000000000">+7 (900) 000-00-00</a>
+                <p>Telegram / WhatsApp</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // === ФОРМА ЗАЯВКИ ===
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const btn = this.querySelector('button');
+            const originalText = btn.textContent;
+            btn.textContent = 'ОТПРАВКА...';
+            btn.disabled = true;
+
+            const data = {
+                car_brand: document.getElementById('carBrand').value,
+                service: document.getElementById('service').value,
+                contact: document.getElementById('contact').value
+            };
+
+            try {
+                const response = await fetch('/api/submit', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                const result = await response.json();
+                if (response.ok) {
+                    alert(result.message);
+                    this.reset();
+                } else {
+                    alert('Ошибка: ' + result.error);
+                }
+            } catch (error) {
+                alert('Не удалось подключиться к серверу.');
+            } finally {
+                btn.textContent = originalText;
+                btn.disabled = false;
+            }
+        });
+
+        // === МОБИЛЬНОЕ МЕНЮ ===
+        const burgerBtn = document.getElementById('burgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const closeMenu = document.getElementById('closeMenu');
+
+        function openMenu() {
+            mobileMenu.classList.add('active');
+            menuOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeMenuFn() {
+            mobileMenu.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        burgerBtn.addEventListener('click', openMenu);
+        closeMenu.addEventListener('click', closeMenuFn);
+        menuOverlay.addEventListener('click', closeMenuFn);
+        mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenuFn));
+
+        // === КНОПКА НАВЕРХ ===
+        const scrollTopBtn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', () => {
+            scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+        });
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // === АНИМАЦИИ ПРИ СКРОЛЛЕ ===
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>
